@@ -15,12 +15,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://simple-grocery-store-api.glitch.me/products?category=coffee&results=2",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/products?category=coffee&results=2",
 					"host": [
-						"simple-grocery-store-api",
-						"glitch",
-						"me"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"products"
@@ -38,6 +35,12 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://simple-grocery-store-api.glitch.me"
 		}
 	]
 }
