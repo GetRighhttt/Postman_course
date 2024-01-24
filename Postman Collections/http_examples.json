@@ -123,7 +123,7 @@
 			"response": []
 		},
 		{
-			"name": "POST New Order",
+			"name": "POST New Cart",
 			"id": "9755cffb-32e1-424c-a707-46fbdeac0634",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -145,7 +145,7 @@
 			"response": []
 		},
 		{
-			"name": "GET New Order",
+			"name": "GET New Cart",
 			"id": "97a6e083-4416-47df-b54b-62550ca5e06e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -173,7 +173,7 @@
 			"response": []
 		},
 		{
-			"name": "GET New Order Items",
+			"name": "GET New Cart Items",
 			"id": "8d25e060-a4eb-49ed-b4fd-9e89f6cad55a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -271,7 +271,29 @@
 			"response": []
 		},
 		{
-			"name": "POST New Items to Cart",
+			"name": "Register API Client",
+			"id": "a33bb910-387d-49ba-b4af-ea2fee9cb384",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\" : \"Stefan\",\r\n   \"clientEmail\": \"stefanbayne@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/api-clients"
+			},
+			"response": []
+		},
+		{
+			"name": "POST/CREATE New Order",
 			"id": "4b028cd1-cfe5-4701-838b-6137e54dbfc4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -310,10 +332,37 @@
 			"response": []
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5dbb6981-5f19-41ea-af1c-7033886411d4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "cd4beaf3-8a4f-427c-b507-675514f07fad",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
 			"key": "baseUrl",
 			"value": "https://simple-grocery-store-api.glitch.me"
+		},
+		{
+			"key": "accessToken",
+			"value": "ACCESS TOKEN",
+			"type": "string"
 		}
 	]
 }
