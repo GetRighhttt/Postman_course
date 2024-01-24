@@ -154,12 +154,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://simple-grocery-store-api.glitch.me/carts/:cartId",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/carts/:cartId",
 					"host": [
-						"simple-grocery-store-api",
-						"glitch",
-						"me"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"carts",
@@ -185,12 +182,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://simple-grocery-store-api.glitch.me/carts/:cartId/items",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/carts/:cartId/items",
 					"host": [
-						"simple-grocery-store-api",
-						"glitch",
-						"me"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"carts",
@@ -227,12 +221,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://simple-grocery-store-api.glitch.me/carts/:cartId/items",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/carts/:cartId/items",
 					"host": [
-						"simple-grocery-store-api",
-						"glitch",
-						"me"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"carts",
@@ -260,12 +251,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://simple-grocery-store-api.glitch.me/carts/:cartId/items",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/carts/:cartId/items",
 					"host": [
-						"simple-grocery-store-api",
-						"glitch",
-						"me"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"carts",
@@ -274,7 +262,45 @@
 					],
 					"variable": [
 						{
-							"id": "b3fc3f91-8458-40a8-9181-81d6c2d21480",
+							"key": "cartId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST New Items to Cart",
+			"id": "4b028cd1-cfe5-4701-838b-6137e54dbfc4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"productId\" : \"4643\",\r\n   \"quantity\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/carts/:cartId/items",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items"
+					],
+					"variable": [
+						{
+							"id": "7ca20177-e6fe-4492-ae14-6a20d4180fc5",
 							"key": "cartId",
 							"value": "GT2R2zlg5Ts-8DMXijSKX"
 						}
