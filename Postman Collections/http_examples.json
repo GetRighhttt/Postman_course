@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "4d379841-cead-4fa8-b06a-794dcae8bedf",
+		"name": "Simple Grocery Store Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Products",
+			"id": "dbf04e90-5223-497a-9a6f-6c06fcfb42f6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/products/"
+			},
+			"response": []
+		},
+		{
+			"name": "PATH example",
+			"id": "cc08d202-3867-4891-a318-5f04dd734c9d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/products/:productId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products",
+						":productId"
+					],
+					"variable": [
+						{
+							"id": "a7950609-d8f4-4268-8929-b94bf88b5626",
+							"key": "productId",
+							"value": "4643"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATH/QUERY and Product-Label",
+			"id": "d6fd18bd-900c-4ca2-b60f-e6e8a6cfad73",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/products/:productId?product-label=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products",
+						":productId"
+					],
+					"query": [
+						{
+							"key": "product-label",
+							"value": "true"
+						}
+					],
+					"variable": [
+						{
+							"id": "a7950609-d8f4-4268-8929-b94bf88b5626",
+							"key": "productId",
+							"value": "4643"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Results & Fresh-Produce",
+			"id": "0ecd0faa-fe9b-4d6a-8529-def39652ab69",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/products?results=2&category=fresh-produce",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "results",
+							"value": "2"
+						},
+						{
+							"key": "category",
+							"value": "fresh-produce"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST New Order",
+			"id": "9755cffb-32e1-424c-a707-46fbdeac0634",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"created\" : true,\r\n    \"cartId\" : \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/carts/"
+			},
+			"response": []
+		},
+		{
+			"name": "GET New Order",
+			"id": "97a6e083-4416-47df-b54b-62550ca5e06e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simple-grocery-store-api.glitch.me/carts/:cartId",
+					"protocol": "https",
+					"host": [
+						"simple-grocery-store-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"carts",
+						":cartId"
+					],
+					"variable": [
+						{
+							"key": "cartId",
+							"value": "GT2R2zlg5Ts-8DMXijSKX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET New Order Items",
+			"id": "8d25e060-a4eb-49ed-b4fd-9e89f6cad55a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simple-grocery-store-api.glitch.me/carts/:cartId/items",
+					"protocol": "https",
+					"host": [
+						"simple-grocery-store-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items"
+					],
+					"variable": [
+						{
+							"id": "342a67a4-5fd0-4fa1-b370-01ce0473f7b5",
+							"key": "cartId",
+							"value": "GT2R2zlg5Ts-8DMXijSKX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST New Items",
+			"id": "f3c93443-9118-45ad-b361-3fa5f37dfe60",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"productId\" : \"4643\",\r\n   \"quantity\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://simple-grocery-store-api.glitch.me/carts/:cartId/items",
+					"protocol": "https",
+					"host": [
+						"simple-grocery-store-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items"
+					],
+					"variable": [
+						{
+							"id": "7ca20177-e6fe-4492-ae14-6a20d4180fc5",
+							"key": "cartId",
+							"value": "GT2R2zlg5Ts-8DMXijSKX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET New Items Created",
+			"id": "81c58dc8-b388-4a15-9568-639a4b635a27",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simple-grocery-store-api.glitch.me/carts/:cartId/items",
+					"protocol": "https",
+					"host": [
+						"simple-grocery-store-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items"
+					],
+					"variable": [
+						{
+							"id": "b3fc3f91-8458-40a8-9181-81d6c2d21480",
+							"key": "cartId",
+							"value": "GT2R2zlg5Ts-8DMXijSKX"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://simple-grocery-store-api.glitch.me"
+		}
+	]
+}
