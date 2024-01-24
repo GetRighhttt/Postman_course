@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "f842d95b-0e22-4dac-a94d-9de915de51f5",
+		"name": "Simple Grocery Store - Coffee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Coffee - Simple Grocery Store",
+			"id": "d5ee8e17-2454-4ba8-aa18-30ecc594753d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simple-grocery-store-api.glitch.me/products?category=coffee&results=2",
+					"protocol": "https",
+					"host": [
+						"simple-grocery-store-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "coffee"
+						},
+						{
+							"key": "results",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
