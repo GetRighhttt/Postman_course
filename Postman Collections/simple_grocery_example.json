@@ -23,9 +23,15 @@
 						}
 					}
 				},
-				"url": "https://simple-grocery-store-api.glitch.me/products"
+				"url": "{{baseUrl}}/products"
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://simple-grocery-store-api.glitch.me"
 		}
 	]
 }
