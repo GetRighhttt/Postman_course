@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "35650c81-50c7-44db-acd0-1afc6d24c471",
+		"name": "Simple Grocery Store Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Products",
+			"id": "36e925e6-ce07-46c2-82e9-2b1ebedd7572",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://simple-grocery-store-api.glitch.me/products"
+			},
+			"response": []
+		}
+	]
+}
