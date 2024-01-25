@@ -343,7 +343,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cartId\": \"GT2R2zlg5Ts-8DMXijSKX\",\r\n    \"customerName\": \"{{$randomFullName}}\"\r\n}",
+					"raw": "{\r\n    \"cartId\": \"GT2R2zlg5Ts-8DMXijSKX\",\r\n    \"customerName\": \"{{$randomFullName}}\"\r\n} ",
 					"options": {
 						"raw": {
 							"language": "json"
