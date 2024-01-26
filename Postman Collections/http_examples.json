@@ -381,6 +381,34 @@
 				"url": "{{baseUrl}}/orders"
 			},
 			"response": []
+		},
+		{
+			"name": "GET ALL ORDERS Copy",
+			"id": "99bfc7dc-56c6-4338-a243-2f1e79ad1ea2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{accessToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/orders"
+			},
+			"response": []
 		}
 	],
 	"event": [
