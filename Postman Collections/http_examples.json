@@ -383,7 +383,7 @@
 			"response": []
 		},
 		{
-			"name": "GET ALL ORDERS Copy",
+			"name": "PATCH an Order",
 			"id": "99bfc7dc-56c6-4338-a243-2f1e79ad1ea2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -399,14 +399,29 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"customerName\": \"Stefan Bayne\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{baseUrl}}/orders"
+				"url": {
+					"raw": "{{baseUrl}}/orders/:orderId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "GT2R2zlg5Ts-8DMXijSKX"
+						}
+					]
+				}
 			},
 			"response": []
 		}
