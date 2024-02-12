@@ -1,0 +1,22 @@
+{
+	"info": {
+		"_postman_id": "6e3300f1-2a76-40f1-be22-bbae8c1a1b74",
+		"name": "TestingAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Typicode",
+			"id": "9ae77c9e-75c3-43b9-a84e-e45051df98f6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/todos/"
+			},
+			"response": []
+		}
+	]
+}
