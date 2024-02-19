@@ -28,6 +28,28 @@
 			"response": []
 		},
 		{
+			"name": "HEAD example",
+			"id": "ec7136c1-87ea-4b0f-b72f-d9d93d49f453",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/products/"
+			},
+			"response": []
+		},
+		{
 			"name": "PATH example",
 			"id": "cc08d202-3867-4891-a318-5f04dd734c9d",
 			"protocolProfileBehavior": {
